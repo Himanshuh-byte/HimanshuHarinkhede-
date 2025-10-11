@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+
+  <style>
+    /* === RESET & BASE === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* === HEADER / NAV === */
+    header {
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin: 0 10px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #0070f3;
+    }
+
+    /* === HERO SECTION === */
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem;
+      background: linear-gradient(135deg, #0070f3, #00c6ff);
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .hero button {
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      background: white;
+      color: #0070f3;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .hero button:hover {
+      background: #e0e0e0;
+    }
+
+    /* === SECTIONS === */
+    section {
+      padding: 3rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #0070f3;
+    }
+
+    .about p, .contact p {
+      text-align: center;
+      font-size: 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h4 {
+      margin-bottom: 0.5rem;
+      color: #0070f3;
+    }
+
+    /* === FOOTER === */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: #fff;
+      color: #555;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    /* === DARK MODE === */
+    .dark-mode {
+      background-color: #1e1e1e;
+      color: #eee;
+    }
+
+    .dark-mode header {
+      background: #222;
+    }
+
+    .dark-mode .project {
+      background: #2b2b2b;
+    }
+
+    .toggle-btn {
+      cursor: pointer;
+      background: none;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background: #0070f3;
+      color: black;
+      border-color: #0070f3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Himanshu Harinkhede</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="toggle-btn" onclick="toggleTheme()">🌙 Dark</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Hello, I’m <span>Himanshu Harinkhede</span> 👋</h2>
+    <p>Aspiring Engineer • Developer </p>
+    <button onclick="window.location.href='#contact'">Contact Me</button>
+  </section>
+
+  <section id="about" class="about">
+    <h3>About Me</h3>
+    <p>
+      I’m a passionate about learne new thing related tech and electronics.
+      This is my personal portfolio — a place to showcase what I do and what I’m learning.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="projects">
+      <div class="project">
+        <h4>Project One</h4>
+        <p>A cool website I built using HTML and CSS.</p>
+        <a href="#" target="_blank">🔗 View Project</a>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h3>Contact Me</h3>
+    <p>Email: <a href="mailto:youremail@gmail.com">hharinkhede89@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/himanshu-harinkhede-90590132b</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>https://github.com/Himanshuh-byte</p>
+  </section>
+
+  <footer>
+    © 2025 Hi-MAN-SHU | Built with ❤️ using HTML & CSS
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</body>
+</html>
